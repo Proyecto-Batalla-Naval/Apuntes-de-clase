@@ -10,10 +10,15 @@ default_app = firebase_admin.initialize_app(cred, {
 
 #Referencia al nodo en la base de datos
 ref = db.reference("hola") #Cambia nodo principal por el nombre que se le asigna
+ref_2=db.reference("Prueba con 2do nodo") ##Probando agregar nuevo nodo
 
 #Escribir datos en tiempo real
 ref.set ({
     "mensaje1": "los amo",
+    "activo": True
+})
+ref_2.set ({
+    "Mensaje2": "¿Prueba exitosa?",
     "activo": True
 })
 

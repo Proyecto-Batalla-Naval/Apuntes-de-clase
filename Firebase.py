@@ -3,13 +3,13 @@ import firebase_admin
 from firebase_admin import credentials, db
 
 #Conectar a firebase
-cred = firebase_admin.credentials.Certificate('bookstoreproject-8b4f0-firebase-adminsdk-2eymv-2c7ff2f676.json')
+cred = firebase_admin.credentials.Certificate(r"C:\Users\julia\OneDrive\Documentos\Unal 1 semestre\Programación\Batalla naval\Apuntes-de-clase\Firebase.py")
 default_app = firebase_admin.initialize_app(cred, {
     'databaseURL':"https://bookstoreproject-8b4f0-default-rtdb.firebaseio.com/"
 })
 
 #Referencia al nodo en la base de datos
-ref = db.reference("hola") #Cambia nodo principal por el nombre que se le asigna
+ref = db.reference("hola1") #Cambia nodo principal por el nombre que se le asigna
 ref_2=db.reference("Prueba con 2do nodo") ##Probando agregar nuevo nodo
 
 #Escribir datos en tiempo real
